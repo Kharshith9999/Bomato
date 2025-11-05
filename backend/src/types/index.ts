@@ -1,4 +1,5 @@
 import { Document, Types } from 'mongoose'
+import { Request } from 'express'
 
 // Base interface for MongoDB documents
 export interface BaseDocument extends Document {
