@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "name": "bomato-food-delivery",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "installCommand": "npm install",
+  "devCommand": "npm run dev",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "env": {
+    "NEXT_PUBLIC_API_URL": "@api_url",
+    "NEXT_PUBLIC_GOOGLE_MAPS_API_KEY": "@google_maps_key"
+  }
+}
