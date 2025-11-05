@@ -1,0 +1,34 @@
+{
+  "name": "bomato",
+  "version": "1.0.0",
+  "description": "Bomato Food Delivery Platform - Complete food delivery and restaurant discovery app",
+  "scripts": {
+    "setup-all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "start": "npm run start:backend",
+    "start:backend": "cd backend && npm start"
+  },
+  "keywords": [
+    "food-delivery",
+    "restaurant",
+    "nextjs",
+    "express",
+    "mongodb",
+    "typescript",
+    "zomato-clone"
+  ],
+  "author": "Kharshith",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kharshith9999/Bomato.git"
+  }
+}
