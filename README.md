@@ -147,7 +147,13 @@ Bomato/
    NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_stripe_key
    ```
 
-5. **Start development servers**
+5. **Quick Start (Optional)**
+   ```bash
+   # Run the automated setup script
+   ./SETUP.sh
+   ```
+
+6. **Start development servers**
 
    Backend:
    ```bash
@@ -160,6 +166,62 @@ Bomato/
    cd frontend
    npm run dev
    ```
+
+## 🚀 GitHub Deployment Options
+
+### **Option 1: GitHub Pages (Frontend) - FREE**
+Deploy your frontend directly from GitHub:
+
+1. Go to your repository: `https://github.com/Kharshith9999/Bomato`
+2. Click `Settings` → `Pages`
+3. Source: `Deploy from a branch`
+4. Branch: `main` and `/ (root)`
+5. Save and wait for deployment
+
+### **Option 2: GitHub Actions (Auto-Deploy)**
+**Frontend Auto-Deployment:**
+- Push to `main` branch → Auto-deploys to GitHub Pages
+- Workflow file: `.github/workflows/deploy-frontend.yml`
+
+**Backend Deployment:**
+- Connect to Railway via GitHub Actions
+- Auto-deploys on backend changes
+- Workflow file: `.github/workflows/deploy-backend.yml`
+
+### **Option 3: GitHub Codespaces (Instant Dev)**
+**Run in Browser (No Local Setup):**
+1. Go to your repository on GitHub
+2. Click `Code` → `Codespaces` → `New codespace`
+3. Automatic setup with Docker and all dependencies
+4. Ports 3000 (frontend) and 3001 (backend) auto-forwarded
+
+### **Option 4: GitHub Packages + Actions**
+**Full CI/CD Pipeline:**
+- Automatic testing on push
+- Build and deployment on merge
+- Environment management through GitHub Secrets
+
+## 🎯 Quick Share with Friends
+
+### **For Developers:**
+```
+https://github.com/Kharshith9999/Bomato
+```
+
+### **For Non-Technical Users:**
+1. **GitHub Pages Link** (after enabling Pages):
+   ```
+   https://kharshith9999.github.io/Bomato/
+   ```
+
+2. **GitHub Codespaces** (instant trial):
+   - Send them: `https://github.com/Kharshith9999/Bomato`
+   - Tell them: Click "Code" → "Codespaces" → "New codespace"
+
+### **For Live Demo:**
+1. Enable GitHub Pages in repository settings
+2. Share the deployed URL
+3. No additional setup needed for users!
 
 ## 📊 Database Schema
 
